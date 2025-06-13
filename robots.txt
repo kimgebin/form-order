@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kimgebin.github.io/form-order/sitemap.xml

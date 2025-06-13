@@ -1,0 +1,313 @@
+<!doctype html>
+<html ⚡ lang="id">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  <meta charset="utf-8">
+  <title>Form Order PBN</title>
+  <link rel="canonical" href="self.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <style amp-custom>
+    :root {
+      --primary-color: #4a148c;
+      --accent-color: #f8bbd0;
+      --background-color: #f3e5f5;
+      --text-color: #2c2c2c;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      transition: background 0.3s ease, color 0.3s ease;
+    
+      background: var(--background-color);
+      color: var(--text-color);
+    
+      font-family: Arial, sans-serif;
+      padding: 16px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h2 { text-align: center; color: var(--primary-color); margin-bottom: 24px; font-size: 24px; }
+    form {
+      background: #ffffff;
+      border: 2px solid var(--primary-color);
+      transition: all 0.3s ease-in-out;
+     background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input, select {
+      border: 1px solid #bbb;
+      transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    input:focus, select:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 2px var(--accent-color);
+      outline: none;
+    
+      max-width: 100%;
+    }
+    .half-width {
+      width: 48%;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+    .half-width + .half-width {
+      margin-left: 4%;
+    }
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .total { margin-top: 15px; font-size: 16px; font-weight: bold; color: #d32f2f; }
+    .payment-info {
+      margin-top: 20px;
+      padding: 15px;
+      background: #e3f2fd;
+      border-left: 4px solid #2196f3;
+    }
+    button {
+      background: var(--primary-color);
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #6a1b9a;
+      cursor: pointer;
+    
+      background: #2196f3;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      margin-top: 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+  
+    .field-pair {
+      display: flex;
+      justify-content: space-between;
+      gap: 4%;
+      flex-wrap: wrap;
+    }
+    .field-pair .half-width {
+      flex: 1 1 48%;
+    }
+    
+    .dark {
+      --primary-color: #ffffff;
+      --accent-color: #4a148c;
+      --background-color: #1a1a1a;
+      --text-color: #f0f0f0;
+    }
+
+    .theme-switch {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    </style>
+
+    
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+</head>
+<body [class]="darkMode ? 'dark' : ''" class="fade-in">
+  <div class="theme-switch">
+    <button on="tap:AMP.setState({darkMode: !darkMode})"
+            style="background:#eee;padding:6px 14px;border:none;border-radius:5px;">
+      <span [text]="darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'">🌙 Dark Mode</span>
+    </button>
+  </div>
+
+<h2>Form Order PBN</h2>
+
+<form method="post" action-xhr="https://your-google-apps-script-webapp-url" target="_top">
+  <label>Brand:</label>
+  <input type="text" name="brand" required>
+
+  <label>WhatsApp / Telegram:</label>
+  <input type="text" name="contact" required>
+
+  <div class="field-pair"><div class="half-width"><label>URL 1:</label>
+  <input type="url" name="url1" required></div>
+
+  <div class="half-width"><label>Jumlah PBN untuk URL 1:</label>
+  <select name="jumlah1" on="change:AMP.setState({jumlah1: event.value})" required>
+    <option value="100">100</option>
+    <option value="150">150</option>
+    <option value="200">200</option>
+    <option value="250">250</option>
+    <option value="300">300</option>
+    <option value="350">350</option>
+    <option value="400">400</option>
+    <option value="450">450</option>
+    <option value="500">500</option>
+    <option value="550">550</option>
+    <option value="600">600</option>
+    <option value="650">650</option>
+    <option value="700">700</option>
+    <option value="750">750</option>
+    <option value="800">800</option>
+    <option value="850">850</option>
+    <option value="900">900</option>
+    <option value="950">950</option>
+    <option value="1000">1000</option>
+    <option value="1050">1050</option>
+    <option value="1100">1100</option>
+    <option value="1150">1150</option>
+    <option value="1200">1200</option>
+    <option value="1250">1250</option>
+    <option value="1300">1300</option>
+    <option value="1350">1350</option>
+    <option value="1400">1400</option>
+    <option value="1450">1450</option>
+    <option value="1500">1500</option>
+    <option value="1550">1550</option>
+    <option value="1600">1600</option>
+    <option value="1650">1650</option>
+    <option value="1700">1700</option>
+    <option value="1750">1750</option>
+    <option value="1800">1800</option>
+    <option value="1850">1850</option>
+    <option value="1900">1900</option>
+    <option value="1950">1950</option>
+    <option value="2000">2000</option>
+  </select></div>
+
+  <div class="half-width"><label>URL 2:</label>
+  <input type="url" name="url2"></div>
+
+  <div class="half-width"><label>Jumlah PBN untuk URL 2:</label>
+  <select name="jumlah2" on="change:AMP.setState({jumlah2: event.value})">
+    <option value="100">100</option>
+    <option value="150">150</option>
+    <option value="200">200</option>
+    <option value="250">250</option>
+    <option value="300">300</option>
+    <option value="350">350</option>
+    <option value="400">400</option>
+    <option value="450">450</option>
+    <option value="500">500</option>
+    <option value="550">550</option>
+    <option value="600">600</option>
+    <option value="650">650</option>
+    <option value="700">700</option>
+    <option value="750">750</option>
+    <option value="800">800</option>
+    <option value="850">850</option>
+    <option value="900">900</option>
+    <option value="950">950</option>
+    <option value="1000">1000</option>
+    <option value="1050">1050</option>
+    <option value="1100">1100</option>
+    <option value="1150">1150</option>
+    <option value="1200">1200</option>
+    <option value="1250">1250</option>
+    <option value="1300">1300</option>
+    <option value="1350">1350</option>
+    <option value="1400">1400</option>
+    <option value="1450">1450</option>
+    <option value="1500">1500</option>
+    <option value="1550">1550</option>
+    <option value="1600">1600</option>
+    <option value="1650">1650</option>
+    <option value="1700">1700</option>
+    <option value="1750">1750</option>
+    <option value="1800">1800</option>
+    <option value="1850">1850</option>
+    <option value="1900">1900</option>
+    <option value="1950">1950</option>
+    <option value="2000">2000</option>
+  </select></div>
+
+  <div class="half-width"><label>URL 3:</label>
+  <input type="url" name="url3"></div>
+
+  <div class="half-width"><label>Jumlah PBN untuk URL 3:</label>
+  <select name="jumlah3" on="change:AMP.setState({jumlah3: event.value})">
+    <option value="100">100</option>
+    <option value="150">150</option>
+    <option value="200">200</option>
+    <option value="250">250</option>
+    <option value="300">300</option>
+    <option value="350">350</option>
+    <option value="400">400</option>
+    <option value="450">450</option>
+    <option value="500">500</option>
+    <option value="550">550</option>
+    <option value="600">600</option>
+    <option value="650">650</option>
+    <option value="700">700</option>
+    <option value="750">750</option>
+    <option value="800">800</option>
+    <option value="850">850</option>
+    <option value="900">900</option>
+    <option value="950">950</option>
+    <option value="1000">1000</option>
+    <option value="1050">1050</option>
+    <option value="1100">1100</option>
+    <option value="1150">1150</option>
+    <option value="1200">1200</option>
+    <option value="1250">1250</option>
+    <option value="1300">1300</option>
+    <option value="1350">1350</option>
+    <option value="1400">1400</option>
+    <option value="1450">1450</option>
+    <option value="1500">1500</option>
+    <option value="1550">1550</option>
+    <option value="1600">1600</option>
+    <option value="1650">1650</option>
+    <option value="1700">1700</option>
+    <option value="1750">1750</option>
+    <option value="1800">1800</option>
+    <option value="1850">1850</option>
+    <option value="1900">1900</option>
+    <option value="1950">1950</option>
+    <option value="2000">2000</option>
+  </select></div></div>
+
+  <label>Harga per PBN (Rp):</label>
+  <input type="number" name="harga" on="input-throttled:AMP.setState({harga: event.value})" required>
+
+  <label>Durasi Paket:</label>
+  <select name="durasi" required>
+    <option value="1 bulan">1 Bulan</option>
+    <option value="3 bulan">3 Bulan</option>
+    <option value="permanent">Permanent</option>
+  </select></div>
+
+  <div class="total">
+    <span>Total: Rp </span>
+    <span [text]="((jumlah1 || 0) + (jumlah2 || 0) + (jumlah3 || 0)) * (harga || 0)">0</span>
+  </div>
+
+  <button type="submit">Submit Order</button>
+
+  <div submit-success>
+    <template type="amp-mustache">
+      <p><strong>Order berhasil dikirim!</strong> Kami akan segera memprosesnya.</p>
+    </template>
+  </div>
+
+  <div submit-error>
+    <template type="amp-mustache">
+      <p><strong>Gagal mengirim order:</strong> {{message}}</p>
+    </template>
+  </div>
+</form>
+
+
+
+</body>
+</html>
